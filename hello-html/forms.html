@@ -3,48 +3,53 @@
 
 <head>
     <title>Forms</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
     <h1>Forms</h1>
 
-    <div>
-        <label>
-            First Name
-        </label>
-        <input type="text">    
-    </div>
-    <div>
-        <label>
-            Last Name
-        </label>
-        <input type="text">    
-    </div>
-    <div>
-        <label>
-            Age
-        </label>
-        <input type="number" min="18" max="99">
-    </div>
-    <div>
-        <label>
-            Birth Date
-        </label>
-        <input type="date">
-    </div>
-    <div>
-        <label>
-            Gender
-        </label>
-        <select value="f">
-            <option value="m">Male</option>
-            <option value="f">Female</option>
-        </select>
-    </div>
-    <div>
-        <label>Description</label>
-        <textarea></textarea>
-    </div>
+    <form>
+        <div class="form-field">
+            <label>
+                First Name
+            </label>
+            <input type="text">    
+        </div>
+        <div class="form-field">
+            <label>
+                Last Name
+            </label>
+            <input type="text" disabled>    
+        </div>
+        <div class="form-field">
+            <label>
+                Age
+            </label>
+            <input type="number" min="18" max="99">
+        </div>
+        <div class="form-field">
+            <label>
+                Birth Date
+            </label>
+            <input type="date">
+        </div>
+        <div class="form-field">
+            <label>
+                Gender
+            </label>
+            <select value="f">
+                <option value="m">Male</option>
+                <option value="f">Female</option>
+            </select>
+        </div>
+        <div class="form-field">
+            <label>Description</label>
+            <textarea></textarea>
+        </div>
+    
+    </form>
+
 
 </body>
 

@@ -1,0 +1,128 @@
+/* Selectors */
+
+/* Type (name) Selector */
+h2 {
+    font-weight: normal;
+    font-size: 14px;
+    text-decoration: underline blue;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 18px;
+    background-color: lightskyblue;
+
+}
+
+p {
+    font-size: 12px;
+}
+
+/* class selectors */
+.concept {
+    font-style: italic;
+    color: blue;
+
+}
+
+.technology {
+    text-decoration: green underline;
+}
+
+/* id selector */
+#talked-element {
+    background: lightsalmon;
+}
+
+
+label {
+    display: block;
+    font-size: 10px;
+    margin-top: 8px;
+    color: rgb(100, 100, 100)
+}
+
+input, select, textarea {
+    border: none;
+    border-bottom: 1px solid rgb(182, 182, 182);
+    outline: none;
+    color: rgb(2, 2, 173);
+    background: transparent;
+}
+
+input:focus {
+    border-bottom: 2px solid rgb(122, 122, 122);
+}
+
+
+.form-field {
+    margin: 0px;
+    padding: 4px;
+    margin: 4px;
+}
+
+form {
+    border: 1px solid rgb(150, 191, 218);
+    padding: 10px;
+    background-color: rgb(227, 244, 255);
+    margin: 20px;
+    border-radius: 20px;
+}
+
+/* Attribute selector */
+[type="number"] {
+    color: red;
+}
+
+[disabled] {
+    border-color: olive;
+}
+
+
+/* Joker: Everything selector */
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.code {
+    text-decoration: underline red;
+    font-style: italic;
+}
+
+.selectors strong {
+    color: purple;
+}
+
+.selectors>strong {
+    text-decoration: red underline;
+}
+
+
+/* direct sibling */
+.special+.item {
+    background: yellow;
+}
+
+/* general sibling */
+.special~.item {
+    border: 1px solid red;
+}
+
+ul.reactive li {
+    background: rgb(236, 236, 236);
+}
+
+ul.reactive li:hover {
+    background: lightgrey;
+}
+
+ul.reactive li:nth-child(2) {
+    color: blue;
+}
+
+
+ul.reactive li:last-child {
+    border-bottom: 1px solid brown;
+}
+

@@ -3,14 +3,42 @@
 
 <head>
     <title>Welcome to HTML and CSS</title>
+
+    <!-- External File -->
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <style>
+        /* Embeded CSS */
+        /* h2 {
+            color: blue;
+            text-decoration: yellow underline;
+        } */
+    </style>
 </head>
 
 <body>
+    <!-- inline CSS -->
+    <!-- <h1 style="color: red; background: pink; border: 1px solid brown;">Hello World</h1> -->
     <h1>Hello World</h1>
     <h2>Today is Monday</h2>
+    <h2>It is now morning</h2>
 
-    <p>This is my first HTML Page</p>
-    <p>This is another paragraph</p>
+    <p>
+        This is my first HTML Page, and I am using it to learn <span class="technology">HTML</span>,
+        we have talked about elements,
+        attributes, tables, forms, images links and more
+    </p>
+    <p>
+        We have also talked about the <span class="concept">topography</span> of a <span class="concept">web page</span>.
+        We talked about the IP protocol, the <span class="concept technology">DNS</span>, how http protocol works and so on
+    </p>
+    <p>
+        Now we are talking about CSS, we <span id="talked-element">talked</span> about how to embed the 
+        <span class="technology">CSS</span>
+        in the <span class="technology">HTML</span> (there are actually 3 ways)
+        and now we discuss the various types of <span class="concept">selectors</span>: name, class, id, attributes,
+        and combinators
+    </p>
 
     <nav>
 
@@ -30,13 +58,25 @@
             <li>
                 <a href="forms.html">Forms</a>
             </li>
+            <li>
+                <a href="css.html">CSS</a>
+            </li>
         </ol>
     </nav>
 
-
-    <div>
-        bla <strong>bla </strong> bla bla
+    <div class="combinators-example">
+        <div class="item special">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div>
+            <div class="item">a</div>
+            <div class="item">b</div>
+            <div class="item">c</div>
+            <div class="item">d</div>
+        </div>
     </div>
+
 
 </body>
 
